@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link
+rel="stylesheet"
+href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+/>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+.hero {
+background: linear-gradient(120deg, #3a8dec, #1dd1a1);
+color: white;
+border-radius: 10px;
+padding: 1rem;
+margin-bottom: 1rem;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.gallery img {
+border-radius: 8px;
+transition:
+transform 0.25s ease,
+opacity 0.25s ease;
+}
+.gallery img:hover {
+transform: scale(1.08);
+opacity: 0.88;
+}
+.card {
+background: white;
+border-radius: 10px;
+padding: 16px;
+margin: 10px 0;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.tips {
+font-weight: 500;
+}
+</style>
+</head>
+<body>
+<div data-role="page">
+<div data-role="header" data-theme="b">
+<h1>Interactive Home</h1>
+</div>
+<div data-role="navbar">
+<ul>
+<li><a href="index.html" class="ui-btn-active">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="register.html">Register</a></li>
+</ul>
+</div>
+<div class="ui-content">
+<div class="hero" data-role="content">
+<h2>Welcome to an upgraded mobile experience</h2>
+<p>Fast, animated UI with interactive gallery and smart tips.</p>
+<a href="#tip-dialog" data-rel="popup" class="ui-btn ui-btn-b"
+>Quick Start Tip</a
+>
+</div>
+<div class="card">
+<h3>Live Features</h3>
+<ul>
+<li>Form validation and feedback</li>
+<li>Dynamic theme switch</li>
+<li>Touch-friendly animated cards</li>
+</ul>
+</div>
+<div class="card">
+<h3>Gallery</h3>
+<div
+class="gallery"
+style="
+text-align: center;
+gap: 10px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+"
+>
+<img src="https://via.placeholder.com/150" width="150" alt="image1" />
+<img src="https://via.placeholder.com/150" width="150" alt="image2" />
+<img src="https://via.placeholder.com/150" width="150" alt="image3" />
+</div>
+</div>
+<div class="card" style="text-align: center">
+<p class="tips" id="dynamicTip">
+Tip: Click the button below for a random fun fact.
+</p>
+<button id="tipBtn" class="ui-btn ui-btn-a">Generate Tip</button>
+</div>
+</div>
+<div data-role="footer">
+<h4 align="center">© 2026 Interactive Site</h4>
+</div>
+<div
+data-role="popup"
+id="tip-dialog"
+class="ui-content"
+style="max-width: 280px"
+>
+<h3>Shortcut</h3>
+<p>
+Go to Register to try the animated form effects and live validation.
+</p>
+</div>
+</div>
+<script>
+const tips = [
+"Use strong passwords with a mix of letters, numbers, and symbols.",
+"Mobile users expect fast response and minimal clicks.",
+"Keep your content sectioned and easy to read on small screens.",
+"Feedback messages improve user trust and completion rates.",
+];
+$("#tipBtn").on("click", () => {
+const randomIndex = Math.floor(Math.random() * tips.length);
+$("#dynamicTip").text("Tip: " + tips[randomIndex]);
+});
+</script>
+</body>
+</html>

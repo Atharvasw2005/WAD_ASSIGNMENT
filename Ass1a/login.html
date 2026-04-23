@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .nav-custom {
+            background-color: #0b3c5d;
+        }
+
+        .login-card {
+            max-width: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+
+    <div class="d-flex justify-content-between align-items-center px-4 py-2 nav-custom">
+        <div class="text-white d-flex align-items-center gap-2">
+            <img src="https://img.freepik.com/premium-vector/simple-vintage-old-locomotive-train-logo-design-template_18099-5488.jpg"
+                alt="Train Logo" width="45" height="45">
+            <span class="fw-bold fs-5">Railway Booking</span>
+        </div>
+
+        <div class="d-flex gap-3">
+            <a href="index.html" class="nav-link text-white">HOME</a>
+            <a href="bookTicket.html" class="nav-link text-white">TICKET BOOKING</a>
+            <a href="pnrCheck.html" class="nav-link text-white">PNR CHECK</a>
+            <a href="register.html" class="nav-link text-white">REGISTER</a>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 90vh;">
+        <div class="card shadow login-card">
+            <div class="card-body p-4">
+                <h3 class="text-center mb-4">Login</h3>
+
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter password">
+                    </div>
+                    
+                   
+
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Remember me
+                        </label>
+                    </div>
+
+
+                    <button class="btn btn-primary w-100">Login</button>
+                </form>
+
+                <div class="text-center mt-3">
+                    <a href="./register.html" class="text-decoration-none">Forgot password?</a>
+                    <br>
+                    <span>Don’t have an account? <a href="register.html">Register</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

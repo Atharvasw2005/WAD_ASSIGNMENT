@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Outfit", "Segoe UI", Arial, sans-serif;
+  background: #f4f7fb;
+  color: #20242a;
+}
+
+.dashboard {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+
+.sidebar {
+  background: #18202a;
+  color: #fff;
+  padding: 24px;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 10px;
+}
+
+.sidebar a {
+  color: #dce4ee;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #2d9cdb;
+  color: #fff;
+}
+
+.content {
+  padding: 28px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.topbar h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  color: #667085;
+  font-size: 14px;
+}
+
+.stat-card,
+.panel {
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+}
+
+.stat-card {
+  padding: 20px;
+  display: grid;
+  gap: 6px;
+}
+
+.stat-card span,
+.stat-card small {
+  color: #667085;
+}
+
+.stat-card strong {
+  font-size: 30px;
+}
+
+.panel {
+  padding: 20px;
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.panel-heading h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.panel-heading span {
+  color: #667085;
+  font-size: 14px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.product:last-child {
+  border-bottom: 0;
+}
+
+.product img {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f4f7fb;
+}
+
+.product p {
+  margin: 2px 0 0;
+  color: #667085;
+}
+
+@media (max-width: 800px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .sidebar nav,
+  .topbar {
+    flex-wrap: wrap;
+    display: flex;
+  }
+}

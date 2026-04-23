@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1b | Registration</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      background: #edf4f8;
+      color: #1f2933;
+    }
+    main {
+      width: min(560px, calc(100% - 32px));
+      background: #fff;
+      padding: 28px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+    }
+    h1 { margin: 0 0 18px; text-align: center; }
+    label { display: block; margin-top: 12px; font-weight: 700; }
+    input, select, textarea, button {
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font: inherit;
+    }
+    textarea { resize: vertical; }
+    .inline { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; }
+    .inline label { margin: 0; font-weight: 400; }
+    .inline input { width: auto; margin-right: 5px; }
+    .error { min-height: 18px; color: #d92d20; font-size: 13px; }
+    button {
+      margin-top: 18px;
+      border: 0;
+      color: #fff;
+      background: #2563eb;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    button:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>User Registration</h1>
+    <form id="registrationForm" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name">
+      <div class="error" id="nameError"></div>
+
+      <label for="mobile">Mobile</label>
+      <input id="mobile" name="mobile" type="tel" autocomplete="tel">
+      <div class="error" id="mobileError"></div>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email">
+      <div class="error" id="emailError"></div>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="new-password">
+      <div class="inline">
+        <label><input id="showPassword" type="checkbox"> Show password</label>
+      </div>
+      <div class="error" id="passwordError"></div>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3"></textarea>
+      <div class="error" id="addressError"></div>
+
+      <label for="city">City</label>
+      <select id="city" name="city">
+        <option value="">Select city</option>
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Delhi</option>
+      </select>
+      <div class="error" id="cityError"></div>
+
+      <label>Gender</label>
+      <div class="inline">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+      <div class="error" id="genderError"></div>
+
+      <label>Hobbies</label>
+      <div class="inline">
+        <label><input class="hobby" type="checkbox" value="Reading"> Reading</label>
+        <label><input class="hobby" type="checkbox" value="Drawing"> Drawing</label>
+        <label><input class="hobby" type="checkbox" value="Music"> Music</label>
+      </div>
+      <div class="error" id="hobbyError"></div>
+
+      <button type="submit">Submit with AJAX</button>
+    </form>
+  </main>
+
+  <script>
+    const form = document.getElementById("registrationForm");
+    const users = JSON.parse(localStorage.getItem("users") || "[]");
+
+    document.getElementById("showPassword").addEventListener("change", (event) => {
+      document.getElementById("password").type = event.target.checked ? "text" : "password";
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      document.querySelectorAll(".error").forEach((element) => element.textContent = "");
+
+      const data = {
+        name: form.name.value.trim(),
+        mobile: form.mobile.value.trim(),
+        email: form.email.value.trim(),
+        password: form.password.value,
+        address: form.address.value.trim(),
+        city: form.city.value,
+        gender: form.querySelector("[name='gender']:checked")?.value || "",
+        hobbies: [...form.querySelectorAll(".hobby:checked")].map((item) => item.value)
+      };
+
+      if (!isValid(data)) return;
+
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://jsonplaceholder.typicode.com/users");
+      request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      request.onload = saveAndRedirect;
+      request.onerror = saveAndRedirect;
+      request.send(JSON.stringify(data));
+
+      function saveAndRedirect() {
+        users.push({ ...data, password: undefined });
+        localStorage.setItem("users", JSON.stringify(users));
+        localStorage.setItem("latestUser", JSON.stringify(data));
+        window.location.href = "details.html";
+      }
+    });
+
+    function isValid(data) {
+      const rules = [
+        ["name", /^[A-Za-z ]{2,}$/, "Enter a valid name"],
+        ["mobile", /^[6-9][0-9]{9}$/, "Enter a valid 10 digit mobile number"],
+        ["email", /^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Enter a valid email"],
+        ["password", /^(?=.*[A-Z])(?=.*\d)(?=.*[@#$!]).{8,}$/, "Use 8 chars, 1 uppercase, 1 number and 1 special char"]
+      ];
+
+      let valid = true;
+      rules.forEach(([field, pattern, message]) => {
+        if (!pattern.test(data[field])) {
+          document.getElementById(`${field}Error`).textContent = message;
+          valid = false;
+        }
+      });
+
+      if (data.address.length < 10) {
+        document.getElementById("addressError").textContent = "Address must be at least 10 characters";
+        valid = false;
+      }
+      if (!data.city) {
+        document.getElementById("cityError").textContent = "Select a city";
+        valid = false;
+      }
+      if (!data.gender) {
+        document.getElementById("genderError").textContent = "Select gender";
+        valid = false;
+      }
+      if (data.hobbies.length === 0) {
+        document.getElementById("hobbyError").textContent = "Select at least one hobby";
+        valid = false;
+      }
+      return valid;
+    }
+  </script>
+</body>
+</html>

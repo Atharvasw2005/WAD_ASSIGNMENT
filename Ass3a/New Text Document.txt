@@ -1,0 +1,122 @@
+[1] Jiang, Z., Al-Qaness, M. A. A., Al-Alimi, D., Ewees, A. A., Abd Elaziz, M., Dahou, A., & Helmi, A. M. (2024). Fall Detection Systems for Internet of Medical Things Based on Wearable Sensors: A Review. IEEE Internet of Things Journal, 11(21), 34797-34810. https://doi.org/10.1109/JIOT.2024.3421336
+[2] X. Huang, Y. Xue, S. Ren, and F. Wang, "Sensor-based wearable systems for monitoring human motion and posture: A review," Sensors, vol. 23, no. 22, p. 9047, Nov. 2023, doi: 10.3390/s23229047.
+[3] C.-H. Liu et al., "Fall recognition based on an IMU wearable device and fall verification through a smart speaker and the IoT," Sensors, vol. 23, no. 12, p. 5472, Jun. 2023, doi: 10.3390/s23125472.
+[4]Guo P, Nakayama M. Towards User-Generalizable Wearable-Sensor-Based Human Activity Recognition: A Multi-Task Contrastive Learning Approach. Sensors (Basel). 2025 Nov 15;25(22):6988. doi: 10.3390/s25226988. PMID: 41305195; PMCID: PMC12656164.
+[5] Jia, Q., Guo, J., Yang, P. et al. (1 more author) (2024) A holistic multi-source transfer learning approach using wearable sensors for personalized daily activity recognition. Complex & Intelligent Systems, 10 (1). pp. 1459-1471. ISSN: 2199-4536.
+[6] Paradise, M. M., Thiresha, B., & Vishnuram, S. (2024). Real Time Posture Monitoring System-A Systematic Review.
+[7] V. Figueira et al., "Wearables for monitoring and postural feedback in the work context: A scoping review," Sensors, vol. 24, no. 4, p. 1341, Feb. 2024, doi: 10.3390/s24041341.
+[9]  M. A. Sarwar et al., "An AI-based approach for accurate fall detection and prediction using wearable sensors," in Proc. IEEE 67th Int. Midwest Symp. Circuits Syst. (MWSCAS), Springfield, MA, USA, Aug. 2024, pp. 118–121, doi: 10.1109/MWSCAS60917.2024.10658777.
+[10] L. Šeketa et al., "Differentiating human falls from daily activities using machine learning methods based on accelerometer and altimeter sensor fusion," Sensors, vol. 25, no. 23, p. 7220, Nov. 2025, doi: 10.3390/s25237220.
+[11] J. Cao et al., "An effective deep learning framework for fall detection: Model development and study design," J. Med. Internet Res., vol. 26, p. e56750, Aug. 2024, doi: 10.2196/56750.
+[12] P. Vermander, A. Mancisidor, I. Cabanes, and N. Perez, "Intelligent systems for sitting posture monitoring and anomaly detection: An overview," J. NeuroEng. Rehabil., vol. 21, p. 42, 2024, doi: 10.1186/s12984-024-01322-z.
+[13] H. Jeong and W. Park, "Developing and evaluating a mixed sensor smart chair system for real-time posture classification," IEEE J. Biomed. Health Inform., vol. 25, no. 5, pp. 1805–1813, May 2020, doi: 10.1109/JBHI.2020.3030096.
+[14] NanJing Top Power ASIC Corp., "TP4056 1A standalone linear Li-Ion battery charger datasheet," 2013.
+[15]  J. K. Tan et al., "Design and implementation of a low-cost wearable health monitoring system for IoT applications," in Proc. IEEE Int. Conf. Consumer Electron. (ICCE), Las Vegas, NV, USA, 2022, pp. 1-4, doi: 10.1109/ICCE53296.2022.9730453.
+[16]  MicrOne (Nanjing Micro One Electronics Inc.), "ME6211 High Speed LDO Voltage Regulator Datasheet," 2013.
+[17]  R. J. Milliken, J. Silva-Martinez, and E. Sanchez-Sinencio, "Full on-chip CMOS low-dropout voltage regulator," IEEE Trans. Circuits Syst. I, Reg. Papers, vol. 54, no. 9, pp. 1879-1890, Sep. 2007, doi: 10.1109/TCSI.2007.902615.
+[18]  Espressif Systems, "ESP32-C3 Series Datasheet," Version 1.5, 2023. [Online]. Available: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+[19]  Espressif Systems, "ESP32-C3 Technical Reference Manual," Version 0.4, 2022. [Online]. Available: https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf
+[21]  A. Martín-Morales et al., "Performance evaluation of Bluetooth Low Energy: A systematic review," Sensors, vol. 17, no. 12, p. 2898, Dec. 2017, doi: 10.3390/s17122898.
+[22]  InvenSense Inc., "MPU-6000 and MPU-6050 Product Specification, Revision 3.4," Document Number PS-MPU-6000A, 2013.
+[23]  S. O. H. Madgwick, A. J. L. Harrison, and R. Vaidyanathan, "Estimation of IMU and MARG orientation using a gradient descent algorithm," in Proc. IEEE Int. Conf. Rehabil. Robot. (ICORR), Zurich, Switzerland, Jun. 2011, pp. 1-7, doi: 10.1109/ICORR.2011.5975346.
+[24]  A. Bourke and G. Lyons, "A threshold-based fall-detection algorithm using a bi-axial gyroscope sensor," Med. Eng. Phys., vol. 30, no. 1, pp. 84-90, Jan. 2008, doi: 10.1016/j.medengphy.2006.12.001.
+[26]  A. Luca Di et al., "Characterization of low-frequency noise in MEMS inertial sensors," IEEE Sens. J., vol. 22, no. 6, pp. 5417-5425, Mar. 2022, doi: 10.1109/JSEN.2022.3145282.
+[27]  T. Seel, J. Raisch, and T. Schauer, "IMU-based joint angle measurement for gait analysis," Sensors, vol. 14, no. 4, pp. 6891-6909, Apr. 2014, doi: 10.3390/s140406891.
+[28]  H. Culbertson, S. B. Schorr, and A. M. Okamura, "Haptics: The present and future of artificial touch sensation," Annu. Rev. Control Robot. Auton. Syst., vol. 1, pp. 385-409, 2018, doi: 10.1146/annurev-control-060117-105043.
+[29]  R. L. Boylestad and L. Nashelsky, Electronic Devices and Circuit Theory, 12th ed. Hoboken, NJ, USA: Pearson, 2015.
+[30]  C. F. Coombs and H. W. Holden, Printed Circuit Handbook, 7th ed. New York, NY, USA: McGraw-Hill Education, 2016.
+[31]  Espressif Systems, "ESP32 DevKit V1 User Guide," Version 1.1, 2020. [Online]. Available: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/user-guide-devkitm-1.html
+[34]  N. Petrellis, "A low power IoT sensor node architecture for wearable health monitoring applications," Micromachines, vol. 12, no. 4, p. 443, Apr. 2021, doi: 10.3390/mi12040443.
+[35]  Mahony, R., Hamel, T., & Pflimlin, J. M. (2008). Nonlinear complementary filters on the special orthogonal group. IEEE Transactions on automatic control, 53(5), 1203-1218.
+[36]  S. Fong, Q. Li, and N. Mohammed, "Wearable smart healthcare IoT systems: A survey of system design and applications," J. Sens. Actuator Netw., vol. 12, no. 4, p. 56, Aug. 2023, doi: 10.3390/jsan12040056.
+[37]  M. Chan, D. Estève, J.-Y. Fourniols, C. Escriba, and E. Campo, "Smart wearable systems: Current status and future challenges," Artif. Intell. Med., vol. 56, no. 3, pp. 137-156, Nov. 2012, doi: 10.1016/j.artmed.2012.09.003.
+[38]  D. Jarchi, J. Pope, T. K. M. Lee, L. Tamjidi, A. Mirzaei, and S. Sanei, "A review on accelerometry-based gait analysis and emerging clinical applications," IEEE Rev. Biomed. Eng., vol. 11, pp. 177-194, 2018, doi: 10.1109/RBME.2018.2807182.
+[39]  P. Lukowicz et al., "Wearable systems for health care applications," in Proc. IEEE Sensors, Vienna, Austria, 2004, vol. 3, pp. 1545-1548, doi: 10.1109/ICSENS.2004.1426519.
+[40]  V. Misra, A. Bozkurt, B. Calhoun, T. Jackson, J. Jur, and J. Lach, "Flexible technologies for self-powered wearable health and environmental sensing," Proc. IEEE, vol. 103, no. 4, pp. 665-681, Apr. 2015, doi: 10.1109/JPROC.2015.2412493.
+
+[41] 	H. Wangereka, Mastering Kotlin for Android 14: Build Powerful Android Apps from Scratch Using Jetpack Libraries and Jetpack Compose. Birmingham: Packt Publishing Ltd., 2024.
+
+[42] 	A. Soshin and A. Arhipov, Kotlin Design Patterns and Best Practices: Build Scalable Applications Using Traditional, Reactive, and Concurrent Design Patterns in Kotlin, 2nd ed. Birmingham: Packt Publishing, 2022.
+
+[43] 	J. D. L. Castillo and R. Veen, Kotlin for Java Developers: Confidently Transition from Java to Kotlin Through Hands-On Examples and Idiomatic Kotlin Practices. Birmingham: Packt Publishing, 2025.
+
+[44] 	B. P. D. Putranto, R. Saptoto, O. C. Jakaria, and W. Andriyani, "A comparative study of Java and Kotlin for Android mobile application development," in Proc. 3rd Int. Seminar Res. Inf. Technol. Intell. Syst. (ISRITI), Yogyakarta, Indonesia, 2020, pp. 383–388, doi: 10.1109/ISRITI51436.2020.9315483.
+
+[45] 	L. H. Pramono and Y. K. Y. Javista, "Firebase authentication cloud service for RESTful API security on employee presence system," in Proc. 4th Int. Seminar Res. Inf. Technol. Intell. Syst. 
+(ISRITI), Yogyakarta, Indonesia, 2021, pp. 1–6, doi: 10.1109/ISRITI54043.2021.9702776.
+
+[46] 	L. Goswami and P. Agrawal, "IoT based diagnosing of fault detection in power line transmission through Google Firebase database," in Proc. 4th Int. Conf. Trends Electron. Informatics (ICOEI), Tirunelveli, India, 2020, pp. 415–420, doi: 10.1109/ICOEI48184.2020.9143007.
+[47] 	W.-J. Li, C. Yen, Y.-S. Lin, S.-C. Tung, and S. Huang, "JustIoT Internet of Things based on the Firebase real-time database," in Proc. IEEE Int. Conf. Smart Manuf., Ind. Logistics Eng. (SMILE), Hsinchu, Taiwan, 2018, pp. 43–47, doi: 10.1109/SMILE.2018.8353979.
+
+[48] 	R. Sharma, T. U. Bux, B. Varshney, and K. Tomar, "Real-time student management application using Google Firebase and Android Studio," in Proc. Int. Conf. Intell. Technol. (CONIT), Hubli, India, 2021, pp. 1–6, doi: 10.1109/CONIT51480.2021.9498494.
+
+[49] 	A. Forrester, E. Boudjnah, A. Dumbravan, and J. Tigcal, How to Build Android Apps with Kotlin: A Hands-On Guide to Developing, Testing, and Publishing Your First Apps with Android. Birmingham: Packt Publishing, 2021.
+
+[50] 	R. Coppola, L. Ardito, and M. Torchiano, "Characterizing the transition to Kotlin of Android apps: A study on F-Droid, Play Store, and GitHub," in Proc. 3rd ACM SIGSOFT Int. Workshop App Market Analytics, Tallinn, Estonia, 2019, pp. 8–14, doi: 10.1145/3340496.3342760.
+
+[51] 	B. G. Mateus and M. Martinez, "On the adoption, usage and evolution of Kotlin features in Android development," in Proc. 14th ACM/IEEE Int. Symp. Empirical Softw. Eng. Meas. (ESEM), Bari, Italy, 2020, pp. 1–12, doi: 10.1145/3382494.3410676.
+
+[52] 	Q. Feng, H. Ji, X. Ma, and P. Liang, "Cross-language dependencies: An empirical study of Kotlin-Java," in Proc. 18th ACM/IEEE Int. Symp. Empirical Softw. Eng. Meas. (ESEM), Barcelona, Spain, 2024, pp. 189–199, doi: 10.1145/3674805.3690754.
+
+[53] 	S. Marchenko, Jetpack Compose: New Approaches to Android UI Development. Riga: Publishing House Baltija Publishing, 2023.
+
+[54] 	A. Kwiatkowski and J. Smołka, "Performance analysis of Jetpack Compose components in mobile applications," J. Comput. Sci. Inst., vol. 37, pp. 391–398, 2025, doi: 10.35784/jcsi.3740.
+
+[55] 	M. Kusuma, A. H. Rifani, and B. Sugiantoro, "Comparison analysis of Jetpack Compose and Flutter in Android-based application development using technical domain," in Proc. 8th Int. Conf. Informatics Comput. (ICIC), Semarang, Indonesia, 2023, pp. 1–5, doi: 10.1109/ICIC60109.2023.10381899.
+
+[56] 	D. Sanchez, A. E. Rojas, and H. Florez, "Towards a clean architecture for Android apps using model transformations," IAENG Int. J. Comput. Sci., vol. 49, no. 1, pp. 270–278, 2022.
+
+[57] 	S. R. Zafimiharisoa, S. Salva, and P. Laurentot, "An automatic security testing approach of Android applications," in Proc. 7th Int. Conf. Softw. Eng. Advances (ICSEA), Lisbon, Portugal, 2012, pp. 643–646.
+
+[58] 	J. Tosi, F. Taffoni, M. Santacatterina, R. Sannino, and D. Formica, "Performance evaluation of Bluetooth low energy: A systematic review," Sensors, vol. 17, no. 12, p. 2898, Dec. 2017, doi: 10.3390/s17122898.
+
+[59] 	F. McCown and D. Ouellette, Mobile App Development with Android and Jetpack Compose. [Online]. Available: https://www.cs.harding.edu/fmccown/book/ [Accessed: 2024].
+
+[60] 	S. Bose, A. Kundu, M. Mukherjee, and M. Banerjee, "A comparative study: Java vs. Kotlin programming in Android application development," Int. J. Adv. Res. Comput. Sci., vol. 9, no. 3, pp. 41–45, 2018.
+[61] 	M. Martinez and B. G. Mateus, "Why did developers migrate Android applications from Java to Kotlin?," IEEE Trans. Softw. Eng., vol. 48, no. 11, pp. 4521–4534, Nov. 2022, doi: 10.1109/TSE.2021.3120367.
+
+[62] 	S. M. Lucas, "Cross-platform games in Kotlin," in Proc. IEEE Conf. Games (CoG), Osaka, Japan, 2020, pp. 774–775, doi: 10.1109/CoG47356.2020.9231571.
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+[60] H. Leutheuser, D. Schuldhaus, and B. M. Eskofier, "Hierarchical, multi-sensor based classification of daily life activities: comparison with state-of-the-art algorithms using a benchmark dataset," PLOS ONE, vol. 8, no. 10, p. e75196, Oct. 2013.
+[61] L. Atallah, B. Lo, R. King, and G.-Z. Yang, "Sensor placement for activity detection using wearable accelerometers," in Proc. 2010 Int. Conf. Body Sensor Networks (BSN), Singapore, Jun. 2010, pp. 24–29.
+[62] L. Bao and S. S. Intille, "Activity recognition from user-annotated acceleration data," in Proc. 2nd Int. Conf. Pervasive Computing, Linz, Austria, Apr. 2004, pp. 1–17.
+[63] M. Shoaib, S. Bosch, O. D. Incel, H. Scholten, and P. J. M. Havinga, "Fusion of smartphone motion sensors for physical activity recognition," Sensors, vol. 14, no. 6, pp. 10146–10176, Jun. 2014.
+[64] A. Reiss and D. Stricker, "Introducing a new benchmarked dataset for activity monitoring," in Proc. 16th IEEE Int. Symp. Wearable Computers (ISWC), Newcastle, UK, Jun. 2012, pp. 108–109.
+[65] A. Mannini and A. M. Sabatini, "Machine learning methods for classifying human physical activity from on-body accelerometers," Sensors, vol. 10, no. 2, pp. 1154–1175, 2010.
+[66] C. A. Ronao and S.-B. Cho, "Human activity recognition with smartphone sensors using deep learning neural networks," Expert Systems with Applications, vol. 59, pp. 235–244, Oct. 2016.
+[67] C. Catal, S. Tufekci, E. Pirmit, and G. Kocabas, "On the use of ensemble of classifiers for accelerometer-based activity recognition," Applied Soft Computing, vol. 37, pp. 1018–1022, 2015.
+[68] M. M. Hassan, M. Z. Uddin, A. Mohamed, and A. Almogren, "A robust human activity recognition system using smartphone sensors and deep learning," Future Generation Computer Systems, vol. 81, pp. 307–313, 2018.
+[69] A. Bulling, U. Blanke, and B. Schiele, "A tutorial on human activity recognition using body-worn inertial sensors," ACM Computing Surveys, vol. 46, no. 3, Art. no. 33, pp. 1–33, Jan. 2014.
+[70] D. Figo, P. C. Diniz, D. R. Ferreira, and J. M. P. Cardoso, "Preprocessing techniques for context recognition from accelerometer data," Personal and Ubiquitous Computing, vol. 14, no. 7, pp. 645–662, 2010.
+[71] O. Banos, J.-M. Galvez, M. Damas, H. Pomares, and I. Rojas, "Window size impact in human activity recognition," Sensors, vol. 14, no. 4, pp. 6474–6499, 2014.
+[72] S. J. Preece, J. Y. Goulermas, L. P. J. Kenney, and D. Howard, "A comparison of feature extraction methods for the classification of dynamic activities from accelerometer data," IEEE Transactions on Biomedical Engineering, vol. 56, no. 3, pp. 871–879, 2009.
+[73] A. M. Khan, Y.-K. Lee, S. Y. Lee, and T.-S. Kim, "A triaxial accelerometer-based physical-activity recognition via augmented-signal features and a hierarchical recognizer," IEEE Transactions on Information Technology in Biomedicine, vol. 14, no. 5, pp. 1166–1172, 2010.
+[74] N. Hammerla, J. Fisher, P. Andras, L. Rochester, R. Walker, and T. Plötz, "PD disease state assessment in naturalistic environments using deep learning," in Proc. 29th AAAI Conf. Artificial Intelligence, Austin, TX, USA, Feb. 2015, vol. 29, no. 1.
+[75] N. Ravi, N. Dandekar, P. Mysore, and M. L. Littman, "Activity recognition from accelerometer data," in Proc. 17th Conf. Innovative Applications of Artificial Intelligence (IAAI), Pittsburgh, PA, USA, Jul. 2005, pp. 1541–1546.
+[76] Y. Chen and Y. Xue, "A deep learning approach to human activity recognition based on single accelerometer," in Proc. 2015 IEEE Int. Conf. Systems, Man, and Cybernetics (SMC), Hong Kong, China, Oct. 2015, pp. 1488–1492.
+[77] C. Y. Chang, B. Lange, M. Zhang, S. Koenig, P. Requejo, N. Somboon, and A. A. Rizzo, "Towards pervasive physical rehabilitation using Microsoft Kinect," in Proc. 6th Int. Conf. Pervasive Computing Technologies for Healthcare (PervasiveHealth), San Diego, CA, USA, May 2012, pp. 159–162.
+[78] W. Tao, T. Liu, R. Zheng, and H. Feng, "Gait analysis using wearable sensors," Sensors, vol. 12, no. 2, pp. 2255–2283, 2012.
+[79] K. Kamiya, M. Kudo, H. Nonaka, and J. Toyama, "Sitting posture analysis by pressure sensors," in Proc. 19th Int. Conf. Pattern Recognition (ICPR), Tampa, FL, USA, Dec. 2008, pp. 1–4.
+[80] R. Igual, C. Medrano, and I. Plaza, "Challenges, issues and trends in fall detection systems," BioMedical Engineering Online, vol. 12, no. 1, p. 66, 2013.
+[81] A. Sucerquia, J. D. López, and J. F. Vargas-Bonilla, "SisFall: A fall and movement dataset," Sensors, vol. 17, no. 1, p. 198, 2017.
+[82] A. T. Özdemir and B. Barshan, "Detecting falls with wearable sensors using machine learning techniques," Sensors, vol. 14, no. 6, pp. 10691–10708, 2014.
+[83] S. Abbate, M. Avvenuti, F. Bonatesta, G. Cola, P. Corsini, and A. Vecchio, "A smartphone-based fall detection system," Pervasive and Mobile Computing, vol. 8, no. 6, pp. 883–899, 2012.
+[84] A. K. Bourke, J. V. O'Brien, and G. M. Lyons, "Evaluation of a threshold-based tri-axial accelerometer fall detection algorithm," Gait & Posture, vol. 26, no. 2, pp. 194–199, 2007.
+[85] N. Pannurat, S. Thiemjarus, and E. Nantajeewarawat, "Automatic fall monitoring: A review," Sensors, vol. 14, no. 7, pp. 12900–12936, 2014.
+[86] M. Kangas, I. Vikman, J. Wiklander, P. Lindgren, L. Nyberg, and T. Jämsä, "Sensitivity and specificity of fall detection in people aged 40 years and over," Gait & Posture, vol. 29, no. 4, pp. 571–574, Jun. 2009.
+[87] A. Chelli and M. Pätzold, "A machine learning approach for fall detection and daily living activity recognition," IEEE Access, vol. 7, pp. 38670–38687, 2019.
+[88] A. Reuther, P. Michaleas, M. Jones, V. Gadepally, S. Samsi, and J. Kepner, "Survey and benchmarking of machine learning accelerators," in Proc. IEEE High Performance Extreme Computing Conf. (HPEC), Waltham, MA, USA, Sep. 2019, pp. 1–9.
+[89] N. D. Lane, S. Bhattacharya, P. Georgiev, C. Forlivesi, L. Jiao, L. Qendro, and F. Kawsar, "DeepX: A software accelerator for low-power deep learning inference on mobile devices," in Proc. 15th ACM/IEEE Int. Conf. Information Processing in Sensor Networks (IPSN), Vienna, Austria, Apr. 2016, pp. 1–12.
+[90] P. Li, X. Wang, K. Huang, Y. Huang, S. Li, and M. Iqbal, "Multi-model running latency optimization in an edge computing paradigm," Sensors, vol. 22, no. 16, p. 6097, 2022.
+[92] Y. Vaizman, K. Ellis, and G. Lanckriet, "Recognizing detailed human context in the wild from smartphones and smartwatches," IEEE Pervasive Computing, vol. 16, no. 4, pp. 62–74, 2017.
+[93] A. Stisen, H. Blunck, S. Bhattacharya, T. S. Prentow, M. B. Kjærgaard, A. Dey, and M. M. Jensen, "Smart devices are different: Assessing and mitigating mobile sensing heterogeneities for activity recognition," in Proc. 13th ACM Conf. Embedded Networked Sensor Systems (SenSys), Seoul, South Korea, Nov. 2015, pp. 127–140.
+[94] W. Lu, J. Wang, Y. Chen, S. J. Pan, C. Hu, and X. Qin, "Semantic-discriminative mixup for generalizable sensor-based cross-domain activity recognition," Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., vol. 6, no. 2, pp. 1–19, 2022.
+[95] G. M. Weiss and J. W. Lockhart, "The impact of personalization on smartphone-based activity recognition," in Proc. AAAI Workshop on Activity Context Representation: Techniques and Languages, Toronto, Canada, Jul. 2012, pp. 98–104.
+[96] M. Gjoreski, H. Gjoreski, M. Luštrek, and M. Gams, "How accurately can your wrist device recognize daily activities and detect falls?" Sensors, vol. 16, no. 6, p. 800, 2016.
+[97] F. Attal, S. Mohammed, M. Dedabrishvili, F. Chamroukhi, L. Oukhellou, and Y. Amirat, "Physical human activity recognition using wearable sensors," Sensors, vol. 15, no. 12, pp. 31314–31338, Dec. 2015.
+[98] L. Xu, W. Yang, Y. Cao, and Q. Li, "Human activity recognition based on random forests," in Proc. 13th Int. Conf. Natural Computation, Fuzzy Systems and Knowledge Discovery (ICNC-FSKD), Guilin, China, Jul. 2017, pp. 548–553.

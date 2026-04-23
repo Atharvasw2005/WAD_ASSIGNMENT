@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        .member {
+            background: #fff;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+            text-align: center;
+        }
+
+        .member img {
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 8px;
+        }
+
+        .timeline {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline li {
+            margin-bottom: 14px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline li:before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #1dd1a1;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>About</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="ui-btn-active">About</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+        <div class="ui-content">
+            <h3>Interactive Highlights</h3>
+            <ul>
+                <li>Dynamic homepage tip generator</li>
+                <li>Validated registration form with live feedback</li>
+                <li>Accessible navigation and user actions</li>
+            </ul>
+
+            <h3>Team</h3>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="https://c8.alamy.com/comp/2A1M54F/household-goods-at-local-market-view-from-above-household-items-for-everyday-rural-life-2A1M54F.jpg"
+                        alt="avatar" /><strong>Alex</strong><br />Frontend
+                </div>
+                <div class="member">
+                    <img src="https://c8.alamy.com/comp/2BE85PE/large-set-of-household-items-and-many-toys-on-white-background-illustration-2BE85PE.jpg"
+                        alt="avatar" /><strong>Taylor</strong><br />Interaction
+                </div>
+            </div>
+
+            <h3 style="margin-top: 18px">Roadmap</h3>
+            <ul class="timeline">
+                <li><strong>Step 1:</strong> Mobile-first UI design</li>
+                <li><strong>Step 2:</strong> Form validation + user alerts</li>
+                <li><strong>Step 3:</strong> Offline friendly manifest</li>
+                <li><strong>Step 4:</strong> Progressive enhancements</li>
+            </ul>
+            <a href="#" id="learnMore" class="ui-btn ui-btn-a">Show Surprise</a>
+        </div>
+    </div>
+    <script>
+        $("#learnMore").on("click", function () {
+            alert("Nice choice! Next update will add animated line charts.");
+        });
+    </script>
+</body>
+
+</html>

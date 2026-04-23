@@ -1,0 +1,10 @@
+{
+  "name": "ass2b-ass1a-docker-container",
+  "version": "1.0.0",
+  "description": "Assignment 2b - Docker container environment for Assignment 1a",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC"
+}

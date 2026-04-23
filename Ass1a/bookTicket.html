@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket | Railway Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="https://img.freepik.com/premium-vector/simple-vintage-old-locomotive-train-logo-design-template_18099-5488.jpg"
+                alt="Train Logo">
+            <span>Railway Booking</span>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">HOME</a>
+            <a href="pnrCheck.html">PNR CHECK</a>
+            <a href="login.html">LOGOUT</a>
+        </div>
+    </div>
+
+
+    <section class="ticket">
+        <h2>Book Railway Ticket</h2>
+
+        <form class="ticket-form">
+            <label>From</label>
+            <input type="text" placeholder="Enter Source Station" required>
+
+            <label>To</label>
+            <input type="text" placeholder="Enter Destination Station" required>
+
+            <label>Date of Journey</label>
+            <input type="date" required>
+
+            <label>Class</label>
+            <select required>
+                <option value="">Select Class</option>
+                <option>Sleeper</option>
+                <option>AC 3 Tier</option>
+                <option>AC 2 Tier</option>
+                <option>First Class</option>
+            </select>
+
+            <label>Number of Passengers</label>
+            <input type="number" min="1" max="6" required/>
+
+            <button class="btn">Search Trains</button>
+
+        </form>
+        <div>
+            <img src="" alt="">
+        </div>
+    </section>
+
+
+</body>
+
+</html>

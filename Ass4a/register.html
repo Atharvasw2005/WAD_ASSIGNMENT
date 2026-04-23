@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .strength {
+            font-size: 0.9rem;
+            padding: 6px;
+            border-radius: 6px;
+            margin-top: 2px;
+        }
+
+        .strength.weak {
+            background: #ffdddd;
+            color: #b00;
+        }
+
+        .strength.medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .strength.strong {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .success-msg {
+            color: #155724;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 12px;
+        }
+
+        .error-msg {
+            color: #721c24;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>Register</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html" class="ui-btn-active">Register</a></li>
+            </ul>
+        </div>
+        <div class="ui-content">
+            <form id="registerForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Min 8 chars" required />
+                <div id="strengthText" class="strength">
+                    Password strength will be shown here.
+                </div>
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" name="password2" placeholder="Re-enter password" required />
+                <button type="submit" class="ui-btn ui-btn-b" style="margin-top: 12px">
+                    Register
+                </button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+    <script>
+        function passwordStrength(password) {
+            let score = 0;
+            if (password.length >= 8) score++;
+            if (/[A-Z]/.test(password)) score++;
+            if (/[0-9]/.test(password)) score++;
+            if (/[^A-Za-z0-9]/.test(password)) score++;
+            if (password.length >= 12) score++;
+            if (score <= 2) return "weak";
+            if (score <= 4) return "medium";
+            return "strong";
+        }
+        $("#password").on("input", function () {
+            const val = $(this).val();
+            const status = passwordStrength(val);
+            $("#strengthText").removeClass("weak medium strong").addClass(status);
+            $("#strengthText").text(
+                "Strength: " + status.charAt(0).toUpperCase() + status.slice(1)
+            );
+        });
+        $("#registerForm").on("submit", function (e) {
+            e.preventDefault();
+            const username = $("#username").val().trim();
+            const email = $("#email").val().trim();
+            const password = $("#password").val();
+            const password2 = $("#password2").val();
+            const message = $("#message");
+
+            if (!username || !email) {
+                message.html('<div class="error-msg">Please fill in all fields.</div>');
+                return;
+            }
+            if (password !== password2) {
+                message.html('<div class="error-msg">Passwords do not match.</div>');
+                return;
+            }
+            if (passwordStrength(password) === "weak") {
+                message.html(
+                    '<div class="error-msg">Password is too weak. Include uppercase, numbers or special characters.</div>'
+                );
+                return;
+            }
+            message.html(
+                '<div class="success-msg">Registration complete! Welcome, ' +
+                $("<div>").text(username).html() +
+                ". (This is a demo local UI flow.)</div>"
+            );
+            $("#registerForm")[0].reset();
+            $("#strengthText")
+                .removeClass("weak medium strong")
+                .text("Password strength will be shown here.");
+        });
+    </script>
+</body>
+
+</html>
